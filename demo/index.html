@@ -1,0 +1,55 @@
+<html>
+<head>
+    <script type="text/javascript" src="i-js-core.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+  <h1>i<span>.js</span></h1>
+    <h4>JS like you'd speak</h4>
+
+    <div id="js-output" class="output">Output Area</div>
+
+
+    <button id="js-update">Update</button>
+    <button id="js-dblclick">dbclick me</button>
+    <button id="js-removeClass">remove Class</button>
+    <p>When the class is removed the border goes away. Yay.</p>
+    
+    <p>"I want to add an Event, if you click on the element with the ID js-removeClass a FUNCTION triggers" that's the code in spoken words, below it is in i.js
+    </p>
+<pre>
+<code>
+    
+I.WantTo.addEvent("click", "js-removeClass",function() {
+    I.WantTo.removeClass("output","lorem");
+});
+</code>
+</pre>
+    </div> <!-- wrapper -->
+
+    <script type="text/javascript">
+        I.WantTo.addClass("output","lorem");
+
+
+    var q1 = "OHMAGAWD!";
+    var q2 = "Fuck yeah it works!";
+
+    // "I want to add an Event, 
+    // if you click on the element with the ID js-removeClass 
+    // a FUNCTION triggers"
+    // that's the code in spoken words, below it is in I.js
+    I.WantTo.addEvent("click", "js-removeClass",function() {
+      I.WantTo.removeClass("output","lorem");
+    });
+
+    I.WantTo.addEvent("click","js-update",function() {
+      I.WantTo.update("js-output",q1);
+    });
+
+    I.WantTo.addEvent("dblclick","js-dblclick",function() {
+      I.WantTo.update("js-output",q2);
+    });
+    </script>
+</body>
+</html>
